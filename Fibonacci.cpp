@@ -1,26 +1,26 @@
 #include<iostream>
 #include<math.h>
 using namespace std;
+ void fibo(int num){
 
- fact(int num)
-{
-    int factorial=1;
-    for(int i=2;i<=num;i++)
-
-{
-    factorial=factorial*i;
-
-}
-return factorial;
-}
- int main()
+ int t1=0;
+ int t2=1;
+ int nextterm;
+ for(int i=0;i<num;i++)
  {
-int a;
-cin>>a;
-
-int ans = fact(a);
-cout<<ans;
-return 0;
-
+    cout<<t1<<endl;
+    nextterm=t1+t2;
+    t1=t2;
+    t2=nextterm;
 
  }
+ return;
+
+ }
+int main(){
+
+    int n ;
+    cin>>n;
+    fibo(n);
+    return 0;
+}
