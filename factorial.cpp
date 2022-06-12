@@ -2,7 +2,7 @@
 #include<math.h>
 using namespace std;
 
- fact(int num)
+ int fact(int num)
 {
     int factorial=1;
     for(int i=2;i<=num;i++)
